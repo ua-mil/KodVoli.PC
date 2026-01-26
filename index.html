@@ -55,7 +55,7 @@
     }
 
     .visual {
-      height: 360px;
+      height: auto;
       background: url("energi5.svg")center / contain no-repeat,
                   radial-gradient(circle at center, #1b2633, #0b0f14);
       border: 1px solid var(--line);
@@ -63,10 +63,9 @@
     }
 
     .visual img {
-      width: 160px;
-      height: auto;
-      opacity: 0.9;
-      filter: drop-shadow(0 0 22px rgba(255, 159, 67, 0.35));
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
     }
 
     .number {

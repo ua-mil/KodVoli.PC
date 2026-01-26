@@ -55,15 +55,21 @@
     }
 
     .visual {
+      position: relative;
       height: 360px;
+      width: 100%;
+      overflow: hidden;
       border: 1px solid var(--line);
-
-      background-image: url("energi5.svg");
-      background-repeat: no-repeat;
-      background-position: centr;
-      background-size: 100% 100%;
-
-      background-color: #0b0f14;  
+      background: #0b0f14;
+    }
+  
+    .visual img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;     /* КЛЮЧЕВОЕ */
+      object-position: center;
     }
 
     .number {
@@ -164,6 +170,7 @@
 
     <section class="section">
       <div class="visual">
+        <img src="energi5.svg" alt="Lamp">
       </div>
 
       <div>
